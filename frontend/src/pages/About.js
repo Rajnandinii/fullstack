@@ -5,7 +5,7 @@ function About() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:5000/fullstack/api/about").then((response) => {
+    axios.get("https://rajnandinipatel.me/fullstack/api/about").then((response) => {
       setMessage(response.data.message);
     });
   }, []);

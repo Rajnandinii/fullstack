@@ -5,7 +5,7 @@ const Contact = () => {
     const [message, setMessage] = useState("");
 
     useEffect(() => {
-      axios.get("http://localhost:5000/fullstack/api/contact").then((response) => {
+      axios.get("https://rajnandinipatel.me/fullstack/api/contact").then((response) => {
         setMessage(response.data.message);
       });
     }, []);

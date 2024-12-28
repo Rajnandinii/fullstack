@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/fullstack">
       <nav>
       <Link to="/">Home </Link> | 
         <Link to="/about"> About</Link> |

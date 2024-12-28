@@ -5,7 +5,7 @@ function Home() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:5000/fullstack/api/home").then((response) => {
+    axios.get("https://rajnandinipatel.me/fullstack/api/home").then((response) => {
       setMessage(response.data.message);
     });
   }, []);
@@ -15,7 +15,7 @@ function Home() {
       <h1>Home Page</h1>
       <p>{message}</p>
       <img
-        src= "http://localhost:5000/fullstack/api/images/home-img.jpg"
+        src= "https://rajnandinipatel.me/fullstack/api/images/home-img.jpg"
         alt="Home Page"
         style={{ width: "500px", height: "auto" }}
       />
